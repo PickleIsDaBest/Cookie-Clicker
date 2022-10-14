@@ -15006,7 +15006,7 @@ Game.Launch=function()
 			Game.HardReset(2);
 			Game.bakeryName=name;
 			Game.bakeryNameRefresh();
-			Game.Achievements['Cheated cookies taste awful'].won=1;
+			Game.Achievements['Cheated cookies taste awful'].won=0;
 		}
 		
 		Game.debugTimersOn=0;
@@ -15081,7 +15081,7 @@ Game.Launch=function()
 			
 			l('debug').style.display='block';
 			Game.sesame=1;
-			Game.Achievements['Cheated cookies taste awful'].won=1;
+			Game.Achievements['Cheated cookies taste awful'].won=0;
 		}
 		
 		Game.EditAscend=function()
@@ -15469,7 +15469,7 @@ Game.Launch=function()
 				if (Game.handmadeCookies>=1000000000000000000000000000) {Game.Win('Clickety split');Game.Unlock('Miraculite mouse');}
 				if (Game.handmadeCookies>=100000000000000000000000000000) {Game.Win('Ain\'t that a click in the head');Game.Unlock('Aetherice mouse');}
 				
-				if (Game.cookiesEarned<Game.cookies) Game.Win('Cheated cookies taste awful');
+				if (Game.cookiesEarned<Game.cookies) Game.Win('Itchscratcher');
 				
 				if (Game.Has('Skull cookies') && Game.Has('Ghost cookies') && Game.Has('Bat cookies') && Game.Has('Slime cookies') && Game.Has('Pumpkin cookies') && Game.Has('Eyeball cookies') && Game.Has('Spider cookies')) Game.Win('Spooky cookies');
 				if (Game.wrinklersPopped>=1) Game.Win('Itchscratcher');
